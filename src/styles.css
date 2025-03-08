@@ -1,3 +1,10 @@
 body {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(180, 35, 35);
+}
+
+#another {
+    background-image: url("./img/em.png");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 550px;
 }
