@@ -70,13 +70,49 @@ header {
     padding: 1rem;
     overflow: auto;
 
-    div {
+    & > div {
         flex-shrink: 0;
         height: 80%;
         width: 80%;
         background-color: rgb(10, 10, 10, .8);
         border-radius: 6px;
-        margin: 1rem
+        margin: 1rem 0;
+    }
 
+    #resto-description {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        & > div {
+            height: 80%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #short-description {
+            padding: 1rem;
+            border-right: .1rem solid var(--white);
+
+            p {
+                color: var(--white);
+                font-size: 2rem;
+            }
+        }
+
+        #book-button {
+            button {
+                height: 30%;
+                width: 80%;
+
+                font-size: 3rem;
+                color: var(--dark-brown);
+
+                border: none;
+                border-radius: 6px;
+            }
+        }
     }
 }
