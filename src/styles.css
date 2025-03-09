@@ -40,4 +40,8 @@ header {
 
 #content {
     background-color: rgb(32, 32, 32);
+    background-image: url(./img/bg-restaurant.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
 }
