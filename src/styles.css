@@ -6,13 +6,18 @@
 
 body {
     height: 100vh;
+    background-image: url(./img/bg-restaurant.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
     display: grid;
     grid-template-rows: 10% 90%;
 }
 
 header {
-    background-color: black;
+    background-color: rgb(10, 10, 10, .7);
 
     display: flex;
     align-items: center;
@@ -39,8 +44,7 @@ header {
 }
 
 #content {
-    background-color: rgb(32, 32, 32);
-    background-image: url(./img/bg-restaurant.jpg);
+    background-color: rgb(10, 10, 10, .2);
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
