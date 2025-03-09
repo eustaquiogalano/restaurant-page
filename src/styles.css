@@ -6,6 +6,13 @@
     font-style: normal;
     font-display: swap;
 }
+:root {
+    /* color pallete */
+    --dark-brown: rgba(83,47,23,255);
+    --light-brown: rgba(221,172,114,255);
+    --brown-red: rgba(142,51,33,255);
+    --white: rgba(254,255,250,255);
+}
 
 * {
     padding: 0;
@@ -27,7 +34,7 @@ body {
 }
 
 header {
-    background-color: rgb(10, 10, 10, .6);
+    background-color: var(--brown-red);
 
     display: flex;
     align-items: center;
@@ -46,8 +53,8 @@ header {
             height: 80%;
             border: none;
             border-radius: 6px;
-            background-color: rgb(0, 177, 0);
-            color: white;
+            background-color: var(--white);
+            color: var(--dark-brown);
             font-size: 1.5rem;
         }
     }
@@ -67,7 +74,7 @@ header {
         flex-shrink: 0;
         height: 80%;
         width: 80%;
-        background-color: rgb(10, 10, 10, .5);
+        background-color: rgb(10, 10, 10, .8);
         border-radius: 6px;
         margin: 1rem
 
