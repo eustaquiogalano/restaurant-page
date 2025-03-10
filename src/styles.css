@@ -134,4 +134,15 @@ header {
             padding: 1rem;
         }
     }
+
+    #resto-location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        video {
+            height: 90%;
+            width: 100%;
+        }
+    }
 }
