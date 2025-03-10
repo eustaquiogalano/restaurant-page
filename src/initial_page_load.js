@@ -1,8 +1,14 @@
+import menuImageImport from './img/menu.png';
+
 (function() {
+
     // first get a reference to the content div
+    // that will hold all the 3 divs that also
+    // holds the main contents of the page
     const content = document.querySelector('#content');
 
-    // create element and assign corresponding attributes
+    // first div
+    // create div element and assign an id name
     const restoDescription = document.createElement('div');
     restoDescription.id = 'resto-description';
 
@@ -39,4 +45,23 @@
 
     // finally append resto description div inside content div
     content.appendChild(restoDescription);
+
+
+    // second div
+    // create div element and assign an id name 
+    const restoMenu = document.createElement('div');
+    restoMenu.id = 'resto-menu';
+
+    const menu = document.createElement('h3');
+    menu.textContent = 'Menu';
+
+    restoMenu.appendChild(menu);
+
+    const menuImage = document.createElement('img');
+    menuImage.src = menuImageImport;
+    menuImage.alt = 'restaurant menu';
+
+    restoMenu.appendChild(menuImage);
+
+    content.appendChild(restoMenu);
 })();
