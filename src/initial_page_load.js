@@ -1,4 +1,5 @@
 import menuImageImport from './img/menu.png';
+import locationScreencast from './Screencast from Monday, 10 March, 2025 12:28:53 PM PST.webm'
 
 (function() {
 
@@ -69,4 +70,27 @@ import menuImageImport from './img/menu.png';
 
     // append the second div (resto-menu) to the content div
     content.appendChild(restoMenu);
+
+
+    // third div
+    // create the third div and assign id name
+    const restoLocation = document.createElement('div');
+    restoLocation.id = 'resto-location';
+
+    // create video element set autoplay to true 
+    const locationVideo = document.createElement('video');
+    locationVideo.autoplay = true;
+    
+    // create source element to be nested inside video element
+    const vidSource = document.createElement('source');
+    vidSource.src = locationScreencast;
+
+    // append source element inside video element
+    locationVideo.appendChild(vidSource);
+
+    // append video element inside third div (resto location)
+    restoLocation.appendChild(locationVideo);
+
+    // finally append third div to the content div
+    content.appendChild(restoLocation);
 })();
