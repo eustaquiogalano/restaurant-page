@@ -1,7 +1,7 @@
 import menuImageImport from './img/menu.png';
 import locationScreencast from './Screencast from Monday, 10 March, 2025 12:28:53 PM PST.webm'
 
-(function() {
+export const homeModule = function() {
 
     // first get a reference to the content div
     // that will hold all the 3 divs that also
@@ -93,4 +93,4 @@ import locationScreencast from './Screencast from Monday, 10 March, 2025 12:28:5
 
     // finally append third div to the content div
     content.appendChild(restoLocation);
-})();
+};
