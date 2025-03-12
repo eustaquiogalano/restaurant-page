@@ -1,6 +1,7 @@
 import "./styles.css";
 import {homeModule} from "./initial_page_load.js";
 import {menuModule} from "./menu_module.js";
+import { aboutModule } from "./about_module.js";
 
 homeModule();
 const homeButton = document.querySelector('#home');
