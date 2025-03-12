@@ -18,3 +18,8 @@ menuButton.addEventListener('click', () => {
     content.innerHTML = '';
     menuModule();
 });
+
+aboutButton.addEventListener('click', () => {
+    content.innerHTML = '';
+    aboutModule();
+});
